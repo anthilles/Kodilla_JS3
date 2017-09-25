@@ -55,8 +55,16 @@ class Stopwatch {
         var button = document.createElement("button");
         button.innerHTML = "Usuń wpis";
         document.getElementById("results").appendChild(button);
-        button.onclick = function() {node.remove(results),button.remove(results);}
+        button.onclick = () => {node.remove(results),button.remove(results);}
     }
+}
+
+function pad0(value) {
+    let result = value.toString();
+    if (result.length < 2) {
+        result = '0' + result;
+    }
+    return result;
 }
 
 const stopwatch = new Stopwatch(document.querySelector('.stopwatch'));
@@ -72,11 +80,3 @@ resetButton.addEventListener('click', () => stopwatch.reset());
 
 const saveButton = document.getElementById('save');
 saveButton.addEventListener('click', () => stopwatch.save());
-
-function pad0(value) {
-    let result = value.toString();
-    if (result.length < 2) {
-        result = '0' + result;
-    }
-    return result;
-}
