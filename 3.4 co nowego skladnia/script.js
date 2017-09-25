@@ -2,9 +2,9 @@
 // Połączenie dwóch stringów przy użyciu operatora + jest bardzo łatwym zadaniem.
 // Innym sposobem jest użycie metody concat albo join, ale co jeśli nie moglibyśmy skorzystać z żadnej z tych opcji?
 // Twoim zadaniem będzie stworzenie dwóch zmiennych z wartościami Hello oraz World, a następnie połączenie ich metodą inną niż wymienione powyżej.
-const pierwsza = 'Hello';
-const druga = 'World';
-console.log(`${pierwsza} ${druga}`);
+const hello = 'Hello';
+const world = 'World';
+console.log(`${hello} ${world}`);
 
 // ================================ 2 ================================
 // Stwórz funkcję multiply, która ma zwracać wynik działania operacji mnożenia dwóch wartości a i b. Przykładowo:
@@ -36,6 +36,6 @@ average([1, 5, 5, 5, 4, 3, 3, 2, 1]);
 // Podczas pracy nad projektem natknąłeś się na bardzo dziwną strukturę danych - [1, 4,
 // 'Iwona', false, 'Nowak']. Twoim zadaniem jest skorzystanie z destrukturyzacji w celu
 // wyciągnięcia z tablicy zmiennych firstname oraz lastname.
-const bardzoDziwnaTablica = [1, 4, 'Iwona', false, 'Nowak'];
-const [, , firstName, , lastName] = bardzoDziwnaTablica;
+const veryStrangeArray = [1, 4, 'Iwona', false, 'Nowak'];
+const [, , firstName, , lastName] = veryStrangeArray;
 console.log(`${firstName} ${lastName}`);
