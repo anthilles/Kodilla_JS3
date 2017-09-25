@@ -1,0 +1,41 @@
+body {
+    background-color: #313131;
+}
+
+.controls {
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#start, #stop, #reset, #save{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 10px;
+    color: #AEAEAE;
+}
+
+#results {
+    text-align: center;
+    list-style-type: none;
+    font-size: 20px;
+    color: #94CB1E;
+}
+
+.stopwatch {
+    text-align: center;
+    font-weight: bold;
+    color: #B1B1B1;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+button {
+    background-color: #606060;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 0 5px;
+}
